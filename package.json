@@ -1,13 +1,14 @@
 {
   "name": "bezier-curve-tool",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://github.com/ebtesam-l/BezierCurves",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint",
+      "deploy": "next build && touch out/.nojekyll && gh-pages -d out -t true"
+    },
   "dependencies": {
     "lucide-react": "^0.552.0",
     "next": "16.0.1",
@@ -21,7 +22,12 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.0.1",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
 }
+
+
+ 
+
